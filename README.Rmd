@@ -15,12 +15,14 @@ knitr::opts_chunk$set(
 # HUD Brand Color palettes
 
 This is a package forked from jkaupp/nord.
+
 Adapted with Ministry of Housing and Urban Development (New Zealand) brand colours.
 
 
 ## Installation
 
 You can install the current version of hud_palettes from github with:
+
 (eventually, to be moved to hud-govt-nz)
 
 ```{r gh-installation, eval = FALSE}
@@ -34,7 +36,7 @@ devtools::install_github("saera-chun-hud/hud-palettes")
 library(hud.palettes)
 library(purrr)
 
-par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow = c(7, 2), lheight = 2, mar = rep(1.5, 4), adj = 0)
 
 walk(names(hud_palettes), hud_show_palette)
 
