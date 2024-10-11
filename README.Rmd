@@ -31,7 +31,7 @@ devtools::install_github("saera-chun-hud/hud-palettes")
 ## The Palettes of `hud_palettes`
 
 ```{r palettes}
-library(hud_pallettes)
+library(hud.palettes)
 library(purrr)
 
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
@@ -47,7 +47,7 @@ This is a basic example which shows you how to use the different features in `hu
 Here is how to use `scale_fill_hud()` with `ggplot2` 
 ```{r ggplot2_example}
 library(ggplot2)
-library(hud_palettes)
+library(hud.palettes)
 
 ggplot(diamonds) + 
   geom_bar(aes(x = cut, fill = clarity)) +
