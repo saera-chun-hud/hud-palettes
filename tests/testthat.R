@@ -1,4 +1,4 @@
 library(testthat)
-library(nord)
+library(hud_palettes)
 
-test_check("nord")
+test_check("hud_palettes")

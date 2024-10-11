@@ -23,10 +23,6 @@ hud_palettes <- list(# HUD Colours
                       kakariki = c("#005f61", "#00826E", "#339B8B", "#66B4A8", "#99CDC5", "#CCE6E2"),
                       kahurangi = c("#0C619E", "#62B6F3", "#7AC4F4", "#92D2F5", "#ABDEF6", "#C3EAF7"),
                       pango = c("#222423", "#474948", "#6D6E6D", "#929393", "#B8B8B8", "#DEDEDE"),
-                      kokowai_kura = c("#670F17", "#A4343E", "#B65D65", "#C8858B", "#DBAEB2", "#EDD6D8"),
-
-                      # from Nord
-                      lumina = c("#EDDAEB", "#AD8CAE", "#4F93B8", "#306489", "#222B4C"),
-                      victory_bonds = c("#AF1900","#C83200","#E19600","#193264","#001964")
+                      kokowai_kura = c("#670F17", "#A4343E", "#B65D65", "#C8858B", "#DBAEB2", "#EDD6D8")
 
                       )

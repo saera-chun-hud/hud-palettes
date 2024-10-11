@@ -1,8 +1,8 @@
-#' nord palette colors ramped to a specified length
+#' hud palette colours ramped to a specified length
 #'
-#' @param n Number of colors to display
+#' @param n Number of colours to display
 #'
-#' @param palette Choose from 'nord_palettes' list
+#' @param palette Choose from 'hud_palettes' list
 #'
 #' @param alpha transparency
 #'
@@ -35,9 +35,9 @@ hud_col <- function(palette = "hud_brand", n, alpha = 1, reverse = FALSE) {
 
 }
 
-#' nord palette with ramped colours
+#' hud palette with ramped colours
 #'
-#' @param palette Choose from 'nord_palettes' list
+#' @param palette Choose from 'hud_palettes' list
 #'
 #' @param alpha transparency
 #'
@@ -47,13 +47,13 @@ hud_col <- function(palette = "hud_brand", n, alpha = 1, reverse = FALSE) {
 hud_pal <- function(palette = "hud_brand", alpha = 1, reverse = FALSE) {
 
  function(n) {
-   nord(palette, n, alpha, reverse)
+   hud_col(palette, n, alpha, reverse)
  }
 
 }
 
 
-#' nord color scale for ggplot2
+#' hud colour scale for ggplot2
 #'
 #' @rdname scale_colour_hud
 #'
@@ -99,7 +99,7 @@ scale_colour_hud <- scale_colour_hud
 
 #' #' hud fill scale for ggplot2
 #'
-#' @param palette Choose from 'nord_palettes' list
+#' @param palette Choose from 'hud_palettes' list
 #'
 #' @inheritParams viridis::scale_fill_viridis
 #' @inheritParams hud_pal
@@ -112,13 +112,13 @@ scale_colour_hud <- scale_colour_hud
 #'
 #' @examples
 #' library(ggplot2)
-#' library(nord)
+#' library(hud_palettes)
 #'
 #' ggplot(diamonds) +
 #'   geom_bar(aes(x = cut, fill = clarity)) +
-#'   scale_fill_nord("stronger")
+#'   scale_fill_hud("stronger")
 #' @export
-scale_fill_nord <- function(palette = "valley", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
+scale_fill_hud <- function(palette = "valley", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
 
    if (discrete) {
     discrete_scale("fill", "hud_col", hud_pal(palette, alpha = alpha, reverse = reverse), ...)
@@ -127,5 +127,4 @@ scale_fill_nord <- function(palette = "valley", discrete = TRUE, alpha = 1, reve
     scale_fill_gradientn(colours = hud_col(palette, 256, alpha = alpha, reverse = reverse), ...)
   }
 }
-
 
