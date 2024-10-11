@@ -1,4 +1,4 @@
-Package: hud_palettes
+Package: hud.palettes
 Title: HUD Brand Colour Palettes for 'ggplot2' forked from jkaupp/nord
 Version: 1.0.0
 Authors@R: 
