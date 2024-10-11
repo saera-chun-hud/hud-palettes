@@ -68,7 +68,7 @@ hud_show_palette("kakariki")
 
 ## Acknowledgements
 
-1. Full credit to jkaupp (https://github.com/jkaupp/).
+1. Full credit to Jake Kaupp (https://github.com/jkaupp/).
 2. You can read HUD Brand Guidelines in Kete for more information on how to use HUD branding correctly.
 3. Joe Winton's DRAFT D&P Power BI Dashboard standards (Can be found in Data & Products folder).
 

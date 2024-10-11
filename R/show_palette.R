@@ -1,4 +1,4 @@
-#' Display a color palette
+#' Display a colour palette
 #'
 #' Given a character vector (hex RGB values), display palette in graphics window.
 #'

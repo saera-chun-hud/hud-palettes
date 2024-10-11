@@ -1,5 +1,5 @@
-Package: nord
-Title: Arctic Ice Studio's Nord and Group of Seven Inspired Colour Palettes for 'ggplot2'
+Package: hud_palettes
+Title: HUD Brand Colour Palettes for 'ggplot2' forked from jkaupp/nord
 Version: 1.0.0
 Authors@R: 
     person(given = "Jake",
@@ -7,8 +7,8 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jkaupp@gmail.com",
            comment = c(ORCID = "0000-0002-3217-3294"))
-Maintainer: Jake Kaupp <jkaupp@gmail.com>
-Description: Provides the Arctic Ice Studio's Nord and Group of Seven inspired colour palettes for use with 'ggplot2' via custom functions.
+Maintainer: Saera Chun <saera.chun@hud.govt.nz>
+Description: HUD Brand colour palettes for use with 'ggplot2' via custom functions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

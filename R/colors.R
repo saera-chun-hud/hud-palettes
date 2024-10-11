@@ -1,6 +1,5 @@
 #' HUD Brand Colour Palettes
 #'
-#' Includes two from the original Nord palettes
 #'
 #' @export
 hud_palettes <- list(# HUD Colours
