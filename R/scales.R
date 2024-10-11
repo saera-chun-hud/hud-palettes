@@ -11,12 +11,12 @@
 #' @importFrom grDevices colorRampPalette
 #'
 #' @examples
-#' library(nord)
-#' image(volcano, col = nord("aurora", 20))
+#' library(hud_palettes)
+#' image(volcano, col = hud_col("stronger", 20))
 #' @export
-nord <- function(palette = "polarnight", n, alpha = 1, reverse = FALSE) {
+hud_col <- function(palette = "hud_brand", n, alpha = 1, reverse = FALSE) {
 
-  pal <- nord_palettes[[palette]]
+  pal <- hud_palettes[[palette]]
 
   if (is.null(pal))
     stop("Palette not found.")
@@ -44,7 +44,7 @@ nord <- function(palette = "polarnight", n, alpha = 1, reverse = FALSE) {
 #' @param reverse If TRUE, the direction of the colours is reversed.
 #'
 #' @importFrom grDevices colorRampPalette
-nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
+hud_pal <- function(palette = "hud_brand", alpha = 1, reverse = FALSE) {
 
  function(n) {
    nord(palette, n, alpha, reverse)
@@ -55,9 +55,9 @@ nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
 
 #' nord color scale for ggplot2
 #'
-#' @rdname scale_color_nord
+#' @rdname scale_colour_hud
 #'
-#' @param palette Choose from 'nord_palettes' list
+#' @param palette Choose from 'hud_palettes' list
 #'
 #' @param reverse logical, Reverse the order of the colours?
 #'
@@ -65,7 +65,7 @@ nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
 #'
 #' @param discrete whether to use a discrete colour palette
 #'
-#' @param ... additional arguments to pass to scale_color_gradientn
+#' @param ... additional arguments to pass to scale_color_gradient
 #'
 #' @inheritParams viridis::scale_color_viridis
 #'
@@ -73,36 +73,36 @@ nord_pal <- function(palette = "polarnight", alpha = 1, reverse = FALSE) {
 #'
 #' @examples
 #' library(ggplot2)
-#' library(nord)
+#' library(hud_palettes)
 #'
 #' ggplot(diamonds) +
 #'  geom_point(aes(x = carat, y = price, color = cut)) +
-#'  scale_color_nord("lumina")
+#'  scale_colour_hud("kuratea")
 #'
 #' @export
 #'
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
-scale_color_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
+scale_colour_hud <- function(palette = "valley", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
 
   if (discrete) {
-    discrete_scale("colour", "nord", nord_pal(palette, alpha = alpha, reverse = reverse), ...)
+    discrete_scale("colour", "hud_col", hud_pal(palette, alpha = alpha, reverse = reverse), ...)
   }
   else {
-    scale_color_gradientn(colours = nord(palette, 256, alpha = alpha, reverse = reverse), ...)
+    scale_color_gradientn(colours = hud_col(palette, 256, alpha = alpha, reverse = reverse), ...)
   }
 }
 
-#' @rdname scale_color_nord
+#' @rdname scale_colour_hud
 #' @export
-scale_colour_nord <- scale_color_nord
+scale_colour_hud <- scale_colour_hud
 
 
-#' #' nord fill scale for ggplot2
+#' #' hud fill scale for ggplot2
 #'
 #' @param palette Choose from 'nord_palettes' list
 #'
 #' @inheritParams viridis::scale_fill_viridis
-#' @inheritParams nord_pal
+#' @inheritParams hud_pal
 #'
 #' @param discrete whether to use a discrete colour palette
 #'
@@ -116,15 +116,15 @@ scale_colour_nord <- scale_color_nord
 #'
 #' ggplot(diamonds) +
 #'   geom_bar(aes(x = cut, fill = clarity)) +
-#'   scale_fill_nord("victory_bonds")
+#'   scale_fill_nord("stronger")
 #' @export
-scale_fill_nord <- function(palette = "polarnight", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
+scale_fill_nord <- function(palette = "valley", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
 
    if (discrete) {
-    discrete_scale("fill", "nord", nord_pal(palette, alpha = alpha, reverse = reverse), ...)
+    discrete_scale("fill", "hud_col", hud_pal(palette, alpha = alpha, reverse = reverse), ...)
   }
   else {
-    scale_fill_gradientn(colours = nord(palette, 256, alpha = alpha, reverse = reverse), ...)
+    scale_fill_gradientn(colours = hud_col(palette, 256, alpha = alpha, reverse = reverse), ...)
   }
 }
 

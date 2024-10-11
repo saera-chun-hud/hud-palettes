@@ -1,33 +1,32 @@
-#' Nord and northern-themed color palettes
+#' HUD Brand Colour Palettes
 #'
-#' Nord: An arctic, north-bluish color palette.
-#' Created for the clean- and minimal flat design pattern to achieve a optimal focus and readability for code syntax highlighting and UI. It consists of four palettes utilizing a total of sixteen, carefully selected, dimmed pastel colors for a eye-comfortable, but yet colorful ambiance.
+#' Includes two from the original Nord palettes
 #'
-#' The available palettes are:
-#' polarnight
-#' snowstorm
-#' frost
-#' aurora
-#'
-#' There are also 11 Colour palettes extracted from the works of the [Group of Seven](https://en.wikipedia.org/wiki/Group_of_Seven_(artists)) and one color palette drawn from [Lumina Borealis](https://www.luminaborealis.com/)
 #' @export
-nord_palettes <- list(#Nord Palette
-                      polarnight = c("#2E3440", "#3B4252", "#434C5E", "#4C566A"),
-                      snowstorm = c("#D8DEE9", "#E5E9F0", "#ECEFF4"),
-                      frost = c("#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC"),
-                      aurora = c("#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD"),
-                      #Lumina Palette
+hud_palettes <- list(# HUD Colours
+                      hud_brand = c("#003E52", "#FFC04A", "#00826E", "#62B6F3", "#222423", "#A4343E"),
+
+                      # Primary Colours
+                      hud_primary2 = c("#003E52", "#FFC04A"),
+                      hud_primary4 = c("#003E52", "#668B97", "#FFC04A", "#FFE6B7"),
+
+                      # Combinations
+                      kuratea = c("#EDD6D8", "#C8858B", "#668B97", "#336575", "#00232F"),
+                      rainbow = c("#B44E5F", "#DF8881", "#FFD486", "#72CAB2", "#86C4F6"),
+                      stronger = c("#670F17", "#A4343E", "#F7A100", "#0C619E", "#00232F"),
+                      fog = c("#99CDC5", "#ABDEF6", "#668B97", "#336575"),
+                      valley = c("#003E52", "#336575", "#CCD8DC", "#33434A", "#00232F"),
+
+                      # Monochrome
+                      kokopu_pounamu = c("#00232F", "#003E52", "#336575", "#668B97", "#99B2BA", "#CCD8DC"),
+                      kowhai = c("#F7A100", "#FFC04A", "#FFC965", "#FFD380", "#FFDC9B", "#FFE6B7"),
+                      kakariki = c("#005f61", "#00826E", "#339B8B", "#66B4A8", "#99CDC5", "#CCE6E2"),
+                      kahurangi = c("#0C619E", "#62B6F3", "#7AC4F4", "#92D2F5", "#ABDEF6", "#C3EAF7"),
+                      pango = c("#222423", "#474948", "#6D6E6D", "#929393", "#B8B8B8", "#DEDEDE"),
+                      kokowai_kura = c("#670F17", "#A4343E", "#B65D65", "#C8858B", "#DBAEB2", "#EDD6D8"),
+
+                      # from Nord
                       lumina = c("#EDDAEB", "#AD8CAE", "#4F93B8", "#306489", "#222B4C"),
-                      #G7 Palettes
-                      mountain_forms = c("#184860", "#486078", "#d8d8d8", "#484860", "#181830"),
-                      silver_mine = c("#4B644B","#647D4B","#E1E1E1","#7D96AF","#647D96"),
-                      lake_superior = c("#7D4B19","#C89664","#C87d4B","#4B647D","#324B64","#19324B"),
-                      victory_bonds = c("#AF1900","#C83200","#E19600","#193264","#001964"),
-                      halifax_harbor = c("#E1C8AF","#C8AF96","#AF967D","#967D7D","#644B64","#4B324b"),
-                      moose_pond = c("#4B3232","#7D4B32","#966432","#AF7D32","#E19632","#E1AF4B","#C8C896","#4B4B4B"),
-                      algoma_forest = c("#4B4B4B","#967D4B", "#AFAF7D", "#C89632", "#647D64","#96AFAF","#7D96AF"),
-                      rocky_mountain = c("#BEBEBE", "#C8C8C8", "#DCD2C8","#D2C8C8", "#BEBEC8", "#B4B4BE"),
-                      red_mountain = c("#7D3232", "#7D4B4B", "#7D6464", "#AF967D", "#FAC87D", "#E1AF64","#C8964B","#32324B"),
-                      baie_mouton = c("#304890", "#7890A8", "#90A8C0", "#A8A8A8", "#C0C0A8", "#6A7E4F","#304848"),
-                      afternoon_prarie = c("#486090", "#6078A8", "#7890A8","#90A8C0","#F0D8C0","#D6BBCF", "#A8C0C0","#C0D8D8","#A8A890")
+                      victory_bonds = c("#AF1900","#C83200","#E19600","#193264","#001964")
+
                       )
