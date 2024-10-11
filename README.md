@@ -10,7 +10,7 @@ brand colours.
 
 ## Installation
 
-You can install the current version of hud_palettes from github with:
+You can install the current version of hud.palettes from github with:
 
 (eventually, to be moved to hud-govt-nz)
 
@@ -19,7 +19,7 @@ You can install the current version of hud_palettes from github with:
 devtools::install_github("saera-chun-hud/hud-palettes")
 ```
 
-## The Palettes of `hud_palettes`
+## The Palettes of `hud.palettes`
 
 ``` r
 library(hud.palettes)
@@ -36,7 +36,7 @@ walk(names(hud_palettes), hud_show_palette)
 ## Example
 
 This is a basic example which shows you how to use the different
-features in `hud_palettes`:
+features in `hud.palettes`:
 
 Here is how to use `scale_fill_hud()` with `ggplot2`
 
@@ -61,7 +61,7 @@ image(volcano, col = hud_col("rainbow", 20))
 
 <img src="man/figures/README-plot_example-1.png" width="100%" />
 
-You can view the individual palettes in `hud_palettes` via
+You can view the individual palettes in `hud.palettes` via
 `hud_show_palette()`
 
 ``` r
