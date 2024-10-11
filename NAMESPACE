@@ -3,7 +3,6 @@
 export(hud_col)
 export(hud_palettes)
 export(hud_show_palette)
-export(scale_color_hud)
 export(scale_colour_hud)
 export(scale_fill_hud)
 importFrom(ggplot2,discrete_scale)
